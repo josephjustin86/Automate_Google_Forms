@@ -283,6 +283,7 @@ if __name__ == "__main__":
                                       testng_assessment=assessment_instructions['instruction_set'])
     
     result = {**checkstyle_result, **result}
+    print(hints_checkstyle)
     hints+=hints_checkstyle
 
     json.dump(result,open("assesment_result.json",'w+'), indent=4)

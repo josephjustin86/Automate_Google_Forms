@@ -22,6 +22,35 @@ public class TestCases {
      * Follow `testCase01` `testCase02`... format or what is provided in instructions
      */
 
+    @Test
+    public void testCase01()
+            throws InterruptedException {
+
+        Wrappers navigate = new Wrappers(driver);
+
+        System.out.println("Start Test case: testCase01");
+
+        navigate.navigateToGoogleForms();
+        
+        navigate.inputName();
+
+        navigate.whyAutomation();
+
+        navigate.experience();
+
+        navigate.toolsLearned();
+
+        navigate.addressed();
+
+        navigate.navigateDate();
+
+        navigate.navigateTime();
+
+        navigate.submitForm();
+
+        System.out.println("End Test case: testCase01");
+       
+    }
      
     /*
      * Do not change the provided methods unless necessary, they will help in automation and assessment
